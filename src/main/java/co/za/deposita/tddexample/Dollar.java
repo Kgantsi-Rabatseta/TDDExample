@@ -7,8 +7,8 @@ package co.za.deposita.tddexample;
  * Time: 9:36 AM
  * To change this template use File | Settings | File Templates.
  */
-public class Dollar extends Money{
-    //private int amount;//Chapter 4; Privacy
+public class Dollar {
+    public int amount;//Chapter 4; Privacy
     public Dollar(int Amount)
     {
         this.amount = Amount;
@@ -22,7 +22,7 @@ public class Dollar extends Money{
 
     public boolean equals(Object object)
     {
-        Money money = (Money) object;
-        return amount== money.amount;
+        Dollar dollar = (Dollar) object;
+        return amount== dollar.amount;
     }
 }

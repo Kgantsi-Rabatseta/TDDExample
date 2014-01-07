@@ -6,6 +6,8 @@ package co.za.deposita.tddexample;
  * Date: 2014/01/07
  * Time: 9:39 AM
  * To change this template use File | Settings | File Templates.
+ * Target: Test Multiplication and Equality for Dollar and Franc
+ * Ch 4: privacy; Ch 5: Franc-ly; Ch 6: Equality for all
  */
 import org.junit.Assert.*;
 import org.junit.*;
@@ -23,15 +25,5 @@ public class TestMoney {
     {
         Assert.assertTrue((new Dollar(5).equals( new Dollar(5))));
         Assert.assertFalse(new Dollar(5).equals(new Dollar(8)));
-        Assert.assertTrue(new Franc(5).equals(new Franc(5)));
-        Assert.assertFalse(new Franc(5).equals(new Franc(6)));
-    }
-
-    @Test
-    public void testFrancMultiplication()
-    {
-        Franc five = new Franc(5);
-        Assert.assertEquals(new Franc(10),five.times(2));
-        Assert.assertEquals(new Franc(15),five.times(3));
     }
 }
